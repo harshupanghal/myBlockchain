@@ -30,10 +30,10 @@ class Blockchain:
         block=Block(data,hash,prev_hash)
         self.chain.append(block)
 
-bc=Blockchain()
-bc.add_block('1')
-bc.add_block('2')
-bc.add_block('3')
+blo=Blockchain()
+blo.add_block('1')
+blo.add_block('2')
+blo.add_block('3')
 
-for block in bc.chain:
+for block in blo.chain:
     print(block.__dict__)                      # -- transforming the chain into a dictionary to print all info. of a block
